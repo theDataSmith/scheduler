@@ -16,9 +16,9 @@ const history = syncHistoryWithStore(browserHistory, store);
 
 const Routes =
 	<Provider store={store}>
-	<Router history={history}>
-		<Route path="/" component={App}/>
-	</Router>
+		<Router history={history}>
+			<Route path="/" component={App}/>
+		</Router>
 </Provider>;
 
 
