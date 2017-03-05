@@ -4,14 +4,13 @@ import './App.css';
 import {connect} from "react-redux";
 import Header from './components/Header'
 import Schedule from './components/Schedule'
+import SideBar from './components/SideBar';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-		  <div className="SideBar">
-			<Header/>
-		  </div>
+		  <SideBar/>
 		  <div className="Body">
 			  <Header />
 			  <Schedule />
