@@ -16,7 +16,7 @@ const Header = (props) => {
 				<button onClick={() => props.clickTabs()}>
 					custom thing
 				</button>
-				<button onClick={() => {}}>
+				<button onClick={() => 	props.onStart()}>
 					print
 				</button>
 				<button onClick={() => {}}>
@@ -31,6 +31,8 @@ export default connect(
 	(state) => ({
 	}),
 	(dispatch) => ({
-		clickTabs: () => dispatch(scheduleActions.addToSchedule("clapton"))
+		clickTabs: () => dispatch(scheduleActions.addToSchedule("clapton")),
+		onStart: () => dispatch(scheduleActions.runTest())
+
 	})
 )(Header)

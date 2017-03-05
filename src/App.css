@@ -1,108 +1,115 @@
 .App {
-	text-align: left;
-	display: flex;
-	flex-direction: row;
-	flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
 .SideBar {
-	align-items: center;
-	padding: 10px;
-	width: 250px;
-}
-
-.Body{
-  flex: 1;
-  height:100vh;
-}
-
-.Header{
-  color: whitesmoke;
-  background: #131520;
-  height: 5%;
-}
-
-.Schedule{
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  justify-content: space-between;
-  background: saddlebrown;
-  height: 95%;
-  padding-right: 1%;
-  padding-left: 1%;
-}
-
-.Schedule-Column{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.Schedule-Cell{
-
-}
-
-.title{
-  justify-self: flex-end;
-}
-
-.Header {
-	display: flex;
-	align-content: flex-end;
-	justify-content: flex-end;
-}
-
-.SideBySide {
-	display: flex;
-	flex-direction: row;
-}
-
-.SearchIcon {
-	width: 15%;
-	height: 15%;
-}
-
-.SearchBar {
-	flex: 1;
-	border-radius: 10px;
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
+    align-items: center;
+    padding: 10px;
+    width: 250px;
 }
 
 .Body {
-	background: deepskyblue;
-	flex: 1;
+    flex: 1;
+    height: 100vh;
+}
+
+.Header {
+    color: whitesmoke;
+    background: #131520;
+    height: 5%;
+}
+
+.Schedule {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    background: saddlebrown;
+    height: 95%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.Schedule-Column {
+    display: flex;
+    flex: 17;
+    flex-direction: column;
+    /*align-items: ;*/
+    justify-content: space-between;
+}
+
+.Schedule-Cell {
+    flex: 1;
+    background: black;
+    border-bottom: 2px white solid;
+}
+
+.Time-Cell {
+    flex: 1;
+    border-bottom: 2px white solid;
 }
 
 .title {
-	justify-self: flex-start;
+    justify-self: flex-end;
 }
 
+.Header {
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
 
+.SideBySide {
+    display: flex;
+    flex-direction: row;
+}
+
+.SearchIcon {
+    width: 15%;
+    height: 15%;
+}
+
+.SearchBar {
+    flex: 1;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+}
+
+.Body {
+    background: deepskyblue;
+    flex: 1;
+}
+
+.title {
+    justify-self: flex-start;
+}
 
 .SidePane {
-	border: 1px solid black;
-	border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .App-header {
-	background-color: #222;
-	height: 150px;
-	padding: 20px;
-	color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-intro {
-	font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

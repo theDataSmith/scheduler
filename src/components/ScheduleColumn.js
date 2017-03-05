@@ -7,27 +7,13 @@ import Immutable from "immutable";
 import ScheduleCell from './ScheduleCell'
 const ScheduleColumn = (props) => {
 
-
-	const content = Immutable.fromJS(props.currentSchedule)
+	//content is a Immutable List
+	const content = props.currentSchedule
 		.get(props.name)
 		.get('Content');
 
-	console.log(content);
+	// console.dir(content.toJS());
 
-	if(props.name === "Time"){
-		return (
-			<div className="Schedule-Column">
-				<text>
-					{props.name}
-				</text>
-				{
-					content.map((item) =>
-						<ScheduleCell item={item} />
-					)
-				}
-			</div>
-		);
-	}
 
 	return (
 		<div className="Schedule-Column">
@@ -35,9 +21,11 @@ const ScheduleColumn = (props) => {
 				{props.name}
 			</text>
 			{
-				content.map((item) =>
-					<ScheduleCell item={item} isActivated={false} />
-				)
+				content.toSeq().map((value) => {
+					return(
+						<ScheduleCell glarp={value} key={value}/>
+					)
+				})
 			}
 		</div>
 	);
