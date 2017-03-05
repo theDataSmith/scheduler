@@ -95,15 +95,21 @@ const ScheduleReducer = handleActions({
 				//returns the key value if the array contains the tab
 				.findKey((value) => value === toRemoveTab);
 
+				console.log(value.get('Content').toJS());
+
+
+
+
 				const iterables = [];
-				let counter = keyOfHour;
-				while (counter !== keyOfHour + toRemoveTab.get('time')){
+				let counter = toRemoveTab.get('startTime');
+
+				while (counter !== toRemoveTab.get('startTime')+ toRemoveTab.get('time')){
 					iterables.push(counter);
 					counter++
 				}
 				const newContent = value.get("Content")
 					.splice(keyOfHour, 1, ...iterables);
-				return value.set('Content', newContent);
+				  return value.set('Content', newContent);
 			}
 			return value;
 		});
