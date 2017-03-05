@@ -32,7 +32,6 @@ const Header = (props) => {
 	);
 };
 
-
 export default connect(
 	(state) => ({
 		currentGlarp : state.schedule.glarp
