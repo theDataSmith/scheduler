@@ -11,12 +11,7 @@ const Header = (props) => {
 		<div className="Header">
 			<div>
 				<text className="title">
-					{
-						props.currentGlarp ?
-							props.currentGlarp
-							:
-							"Glarp not exist"
-					}
+					Schedule Builder
 				</text>
 				<button onClick={() => props.clickTabs()}>
 					custom thing
@@ -35,7 +30,6 @@ const Header = (props) => {
 
 export default connect(
 	(state) => ({
-		currentGlarp : state.schedule.glarp
 	}),
 	(dispatch) => ({
 		clickTabs: () => dispatch(scheduleActions.addToSchedule("clapton"))

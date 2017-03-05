@@ -12,19 +12,44 @@
 }
 
 .Body{
-  background: deepskyblue;
   flex: 1;
+  height:100vh;
 }
 
+.Header{
+  color: whitesmoke;
+  background: #131520;
+  height: 5%;
+}
+
+.Schedule{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  background: saddlebrown;
+  height: 95%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.Schedule-Column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Schedule-Cell{
+
+}
 
 .title{
-  justify-self: flex-start;
+  justify-self: flex-end;
 }
 
 .Header{
   display: flex;
   align-content: flex-end;
-  justify-content: flex-end;
 }
 
 .SearchBar {

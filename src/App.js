@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import {connect} from "react-redux";
 import Header from './components/Header'
+import Schedule from './components/Schedule'
+
 class App extends Component {
   render() {
     return (
@@ -12,6 +14,7 @@ class App extends Component {
 		  </div>
 		  <div className="Body">
 			  <Header />
+			  <Schedule />
 		  </div>
       </div>
     );
